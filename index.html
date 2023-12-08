@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="assets/images/favicon.png" <link itemprop="thumbnailUrl"
+    href="assets/images/favicon.png">
+  <!-- <link id='favicon' rel="icon" href="assets/images/favicon.png" type="image/png"> -->
+  <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+    <link itemprop="url" href="assets/images/favicon.png">
+  </span>
+  <meta name="keywords" content="Official Website KMTI" />
+  <meta name="description" content="Official Website KMTI" />
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/modal.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Switching dan <span>Wireless</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+        <!--
+        <select name="language" id="lang">
+          <option value="en">En</option>
+          <option value="ar">Ar</option>
+        </select>
+        -->
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home.</a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="navbar-link">About.</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Division.</a>
+          </li> -->
+
+          <!--
+          <li>
+            <a href="#skills" class="navbar-link">Skills.</a>
+          </li>
+          -->
+          <!-- <li>
+            <a href="#IT Research" class="navbar-link">IT Research.</a>
+          </li> -->
+
+          <!-- <li>
+            <a href="#contact" class="navbar-link">Contact.</a>
+          </li> -->
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+  <main>
+    <!-- 
+        - #HERO
+      -->
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+
+        <div class="about-content section-content">
+          <img src="/assets/images/ipv6.jpeg" alt="" class="foto_materi">
+
+
+          <p class="section-subtitle">About IPV6</p>
+
+          <h2 class="h3 section-title">Gambaran umum Protokol Internet versi 6 (IPv6)</h2>
+          <h2 class="h3 section-title">Alamat IPv6</h2>
+
+          <p class="section-text">
+            Dengan IPv6, alamat memiliki panjang 128 bit. Salah satu alasan untuk ruang alamat yang begitu besar adalah untuk membagi alamat yang tersedia ke dalam hierarki 
+            domain perutean yang mencerminkan topologi Internet.
+            Alasan lain adalah untuk memetakan alamat adaptor jaringan (atau antarmuka) yang menghubungkan perangkat ke jaringan. IPv6 memiliki kemampuan bawaan untuk menentukan alamat pada tingkat terendah,
+            yaitu berada di tingkat antarmuka jaringan, dan juga memiliki kemampuan konfigurasi otomatis.
+          </p>
+
+          <h2 class="h3 section-title">Representasi Teks</h2>
+
+          <p class="section-text">
+            Berikut ini adalah tiga formulir konvensional yang digunakan untuk merepresentasikan alamat IPv6 sebagai string teks:
+            <ul class="section-text">
+              <li>
+                • Bentuk titik dua heksadesimal:
+                <ol>Ini adalah bentuk n:n:n:n:n:n:n:n yang disukai. Masing-masing n mewakili nilai heksadesimal dari salah satu dari delapan elemen alamat 16-bit. Misalnya: 3FFE:FFFF:7654:FEDA:1245:BA98:3210:4562.</ol>
+            </li>
+              <li>
+                • Formulir terkompresi:
+                <ol>Karena panjang alamat, umum untuk memiliki alamat yang berisi string panjang dengan nol. Untuk menyederhanakan penulisan alamat ini
+                  , gunakan bentuk terkompresi, di mana satu urutan berdampingan dari 0 blok diwakili oleh simbol titik dua (::). 
+                  Simbol ini hanya dapat muncul sekali pada satu alamat. Misalnya, alamat multicast FFED:0:0:0:0:BA98:3210:4562 dengan 
+                  formulir terkompresi adalah FFED::BA98:3210:4562. Alamat unicast 3FFE:FFFF:0:0:8:800:20C4:0 dengan formulir terkompresi adalah 3FFE:FFFF::8:800:20C4:0. Alamat loopback 0:0:0:0:0:0:0:1
+                   dalam bentuk terkompresi adalah ::1. Alamat yang tidak ditentukan 0:0:0:0:0:0:0:0 pada formulir terkompresi adalah ::.</ol>
+            </li>
+              <li>
+                • Bentuk campuran:
+                <ol>Formulir ini menggabungkan alamat IPv4 dan IPv6. Dalam hal ini, format alamat adalah n:n:n:n:n:n:d.d.d.d, di mana setiap n mewakili nilai heksadesimal dari enam elemen alamat 16-bit urutan tinggi IPv6, dan setiap d mewakili nilai desimal alamat IPv4.</ol>
+            </li>
+          </ul>
+          </p>
+
+          <h2 class="h3 section-title">Jenis Alamat</h2>
+
+          <p class="section-text">
+            Bit jarak antar baris menentukan jenis alamat IPv6 tertentu. Bagian panjang variabel yang berisi bit jarak antar baris ini disebut Format Prefix (FP).<br>
+            Alamat unicast IPv6 dibagi menjadi dua bagian. Bagian pertama berisi awalan alamat, dan bagian kedua berisi pengidentifikasi antarmuka. Cara singkat untuk menunjukkan kombinasi alamat /awalan IPv6 adalah sebagai berikut: ipv6-address/prefix-length. <br>
+            Berikut ini adalah contoh alamat dengan awalan 64-bit. <br>
+
+            3FFE:FFFF:0:CD30:0:0:0:0/64. <br>
+
+            Awalan dalam contoh ini adalah 3FFE:FFFF:0:CD30. Alamat juga dapat ditulis dalam formulir terkompresi, seperti 3FFE:FFFF:0:CD30::/64.
+            
+          <ul class="section-text">
+            IPv6 menguraikan jenis alamat berikut:
+            <li> <br>• Alamat Unicast:
+            <ol>
+              Pengidentifikasi untuk satu antarmuka. Paket yang dikirim ke alamat ini dikirim ke antarmuka yang diidentifikasi. Alamat unicast dibedakan dari alamat multicast berdasarkan nilai oktet tingkat tinggi. Oktet tingkat tinggi pada alamat multicast memiliki nilai heksadesimal FF. Nilai lain untuk oktet ini mengidentifikasi alamat unicast. Berikut ini adalah berbagai jenis alamat unicast:
+              <br>> Alamat lokal tautan:
+              <br>Alamat ini digunakan pada satu tautan dan memiliki format berikut: FE80::*InterfaceID*. Alamat link-lokal digunakan antara node pada link untuk konfigurasi alamat otomatis, penemuan tetangga, atau ketika tidak adanya router. Alamat link-lokal digunakan terutama saat pengaktifan dan ketika sistem belum memperoleh alamat dengan cakupan yang lebih besar.
+              <br>> Alamat lokal situs:
+              <br>Alamat ini digunakan pada satu situs dan memiliki format berikut: FEC0::*SubnetID*:*InterfaceID*. Alamat situs-lokal digunakan untuk pengalamatan di dalam situs web tanpa perlu awalan global.
+              <br>> Alamat unicast IPv6 global:
+              <br>Alamat ini dapat digunakan di internet dan memiliki format berikut: *GlobalRoutingPrefix*::*SubnetID*:*InterfaceID*.
+            </ol>
+          </li>
+            <li>
+              • Alamat Multicast:
+            <ol>
+              Pengidentifikasi untuk satu rangkaian antarmuka (biasanya milik node yang berbeda). Paket yang dikirim ke alamat ini dikirim ke semua antarmuka yang diidentifikasi oleh alamat. Jenis alamat multicast menggantikan alamat siaran IPv4.
+            </ol>
+          </li>
+            <li>
+              • Alamat Anycast:
+            <ol>
+              Pengidentifikasi untuk satu rangkaian antarmuka (biasanya milik node yang berbeda). Paket yang dikirim ke alamat ini dikirim ke hanya satu antarmuka yang diidentifikasi oleh alamat. Ini adalah antarmuka terdekat seperti yang diidentifikasi oleh metrik perutean. Alamat anycast diambil dari ruang alamat unicast dan tidak dapat dibedakan secara sintaksis. Antarmuka yang digunakan menunjukkan perbedaan antara alamat unicast dan anycast sebagai fungsi dari konfigurasinya.
+            </ol>
+          </li>
+          </p>
+
+          <h2 class="h3 section-title">Perutean IPv6</h2>
+
+          <p class="section-text">
+            Mekanisme perutean yang fleksibel adalah keuntungan dari IPv6. 
+            Karena bagaimana ID jaringan IPv4 dan dialokasikan, tabel perutean besar perlu dipertahankan oleh router yang ada di tulang punggung Internet. 
+            Router ini harus mengetahui semua rute untuk meneruskan paket yang berpotensi diarahkan ke simpul apa pun di Internet. 
+            Dengan kemampuannya untuk mengagregasi alamat, IPv6 memungkinkan penetapan alamat yang fleksibel dan secara drastis mengurangi ukuran tabel perutean. 
+            Dalam arsitektur penetapan alamat baru ini, router perantara harus melacak hanya bagian lokal jaringan mereka untuk meneruskan pesan dengan tepat.          
+          </p>
+
+          <h2 class="h3 section-title">Penemuan Tetangga</h2>
+
+          <p class="section-text">
+            Mekanisme perutean yang fleksibel adalah keuntungan dari IPv6. 
+            Karena bagaimana ID jaringan IPv4 dan dialokasikan, tabel perutean besar perlu dipertahankan oleh router yang ada di tulang punggung Internet. 
+            Router ini harus mengetahui semua rute untuk meneruskan paket yang berpotensi diarahkan ke simpul apa pun di Internet. 
+            Dengan kemampuannya untuk mengagregasi alamat, IPv6 memungkinkan penetapan alamat yang fleksibel dan secara drastis mengurangi ukuran tabel perutean. 
+            Dalam arsitektur penetapan alamat baru ini, router perantara harus melacak hanya bagian lokal jaringan mereka untuk meneruskan pesan dengan tepat. 
+            
+            <ul class="section-text">Beberapa fitur yang disediakan oleh penemuan tetangga adalah:
+              <li>
+                • Penemuan perute: Ini memungkinkan host untuk mengidentifikasi router lokal.
+              </li>
+              <li>
+                • Resolusi alamat: Ini memungkinkan simpul untuk menyelesaikan alamat lapisan tautan untuk alamat lompatan berikutnya yang sesuai (pengganti Protokol Resolusi Alamat [ARP]).
+              </li>
+              <li>
+                • Konfigurasi otomatis alamat: Ini memungkinkan host untuk secara otomatis mengonfigurasi alamat lokal situs dan global.
+              </li>
+            </ul>
+
+            <ul>Penemuan tetangga menggunakan pesan Protokol Pesan Kontrol Internet untuk IPv6 (ICMPv6) yang meliputi:
+              <li>
+                • Iklan router: Dikirim oleh router secara semu berkala atau sebagai respons terhadap ajakan router. Router IPv6 menggunakan iklan router untuk mengiklankan ketersediaannya, awalan alamat, dan parameter lainnya.
+              </li>
+              <li>
+                • Ajakan perute: Dikirim oleh host untuk meminta agar router pada tautan segera mengirim iklan router.
+              </li>
+              <li>
+                • Ajakan tetangga: Dikirim oleh simpul untuk resolusi alamat, deteksi alamat duplikat, atau untuk memverifikasi bahwa tetangga masih dapat dijangkau.
+              </li>
+              <li>
+                • Iklan tetangga: Dikirim oleh simpul untuk menanggapi permintaan tetangga atau untuk memberi tahu tetangga tentang perubahan alamat lapisan tautan.
+              </li>
+              <li>
+                • Mengarahkan: Dikirim oleh router untuk menunjukkan alamat lompatan berikutnya yang lebih baik ke tujuan tertentu untuk simpul pengirim.
+              </li>
+            </ul>
+          </p>
+
+          <h2 class="h3 section-title">Konfigurasi Otomatis IPv6</h2>
+
+          <p class="section-text">
+            Salah satu tujuan penting untuk IPv6 adalah untuk mendukung node Plug and Putar. Artinya, seharusnya node dicolokkan ke jaringan IPv6 dan mengonfigurasinya secara otomatis tanpa intervensi manusia.          
+          </p>
+
+          <h2 class="h3 section-title">Jenis konfigurasi otomatis</h2>
+
+          <p class="section-text">
+            <ul class="section-text">IPv6 mendukung jenis konfigurasi otomatis berikut:
+              <li>• 
+                <ol>
+                  Jenis konfigurasi ini memerlukan tingkat intervensi manusia tertentu karena membutuhkan server Dynamic Host Configuration Protocol for IPv6 (DHCPv6) untuk penginstalan dan administrasi node. Server DHCPv6 menyimpan daftar node yang menyediakan informasi konfigurasi. Daftar ini juga mempertahankan informasi status sehingga server tahu seberapa lama setiap alamat digunakan, dan waktu yang dapat tersedia untuk penugasan ulang.
+                </ol>
+              </li>
+              <li>• Konfigurasi otomatis tanpa status:
+                <ol>
+                  Jenis konfigurasi ini cocok untuk organisasi kecil dan individu. Dalam hal ini, setiap hosting menentukan alamatnya dari konten iklan router yang diterima. Menggunakan standar IEEE EUI-64 untuk menentukan bagian ID jaringan alamat, masuk akal untuk mengasumsikan keunikan alamat hosting pada link.
+                </ol>
+              </li>
+            </ul>
+          </p>
+
+          <h2 class="h3 section-title">Mobilitas IPv6</h2>
+
+          <p class="section-text">
+            Proliferasi perangkat seluler telah memperkenalkan persyaratan baru: Perangkat harus dapat mengubah lokasi secara sesekali di Internet IPv6 dan masih mempertahankan koneksi yang ada. Untuk menyediakan fungsi ini, node seluler ditetapkan alamat rumah tempat node selalu dapat dijangkau. Ketika node seluler berada di rumah, node tersebut terhubung ke link rumah dan menggunakan alamat rumahnya. Ketika node seluler jauh dari rumah, agen rumah, yang biasanya merupakan router, menyampaikan pesan antara node seluler dan simpul yang berkomunikasi.          
+          </p>
+
+          <h2 class="h3 section-title">Menonaktifkan atau mengaktifkan IPv6</h2>
+
+          <p class="section-text">
+            Proliferasi perangkat seluler telah memperkenalkan persyaratan baru: Perangkat harus dapat mengubah lokasi secara sesekali di Internet IPv6 dan masih mempertahankan koneksi yang ada. Untuk menyediakan fungsi ini, node seluler ditetapkan alamat rumah tempat node selalu dapat dijangkau. Ketika node seluler berada di rumah, node tersebut terhubung ke link rumah dan menggunakan alamat rumahnya. Ketika node seluler jauh dari rumah, agen rumah, yang biasanya merupakan router, menyampaikan pesan antara node seluler dan simpul yang berkomunikasi.          
+          </p>
+
+          <h2 class="h3 section-title">Langkah-Langkah konfigurasi</h2>
+          <div>
+            <p>Tabel berikut mencantumkan berbagai konfigurasi</p>
+          </div>
+
+        
+
+
+          <!--
+          <div class="btn-group">
+            <button class="btn btn-secondary">Hire me</button>
+
+            <button class="btn btn-primary">Download cv</button>
+          </div>
+          -->
+        </div>
+
+      </section>
+
+
+      <!-- 
+        - #STATS
+      -->
+
+        <!-- 
+        - #SKILLS
+      
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">IT Research</p>
+
+          <h2 class="h3 section-title">IT Research</h2>
+
+          <p class="section-text">
+            Merupakan salah satu proker dari Divisi IPTEK berfokus membahas persoalan di bidang teknologi informasi yang tengah ramai dibicarakan
+          </p>
+
+
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>AI Research</button>
+
+            <button class="toggle-btn" data-toggle-btn>IT Klinik</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/html5.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">TypeScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/typescript.png" alt="TypeScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">jQuery</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/jquery.png" alt="jQuery logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Bootstrap</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Angular</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/angular.png" alt="Angular logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">React</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/react.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Vue</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vue.png" alt="Vue logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Firebase</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/firebase.png" alt="Firebase logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">PugJs</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/pugjs.png" alt="PugJs logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">SASS</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/sass.png" alt="SASS logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <ul class="tools-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Ajax</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/ajax.png" alt="Ajax logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Gulp</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/gulp.png" alt="Gulp logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Webpack</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/webpack.png" alt="Webpack logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Git</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/git.png" alt="Git logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Npm</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/npm.png" alt="Npm logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Command Line</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/command.png" alt="Command Line logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Trello</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/trello.png" alt="Trello logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">ClickUp</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/clickup.png" alt="ClickUp logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Slack</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/slack.png" alt="Slack logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Photoshop</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/photoshop.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Adobe XD</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/adobe-xd.png" alt="Adobe XD logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+        
+      </section>
+      -->
+
+
+
+
+
+        <!-- 
+        - #IT Research
+      -->
+
+       <!-- 
+        - #CONTACT
+      -->
+
+        <!-- <section class="contact" id="contact">
+
+          <div class="contact-content section-content">
+
+            <p class="section-subtitle">Contact</p>
+
+            <h2 class="h3 section-title">Want to get in touch with us?</h2>
+
+            <p class="section-text">
+              Get in touch and let us know how we can help. Fill out the form and we'll be in touch as soon as possible.
+            </p>
+
+            <ul class="contact-list">
+
+              <li class="contact-list-item">
+
+                <div class="contact-item-icon">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Address:</h3>
+
+                  <a class="contact-info" href="https://goo.gl/maps/avVsE84acEeosgbJ6" target="_blank">
+                    Jl. Brawijaya, Geblagan, Tamantirto, Kec. Kasihan, Kabupaten Bantul, Daerah Istimewa Yogyakarta
+                    55183
+                  </a>
+                </div>
+
+              </li>
+
+              <li class="contact-list-item">
+
+                <div class="contact-item-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Phone:</h3>
+
+                  <a href="https://wa.me/+6285171680606" target="_blank" class="contact-info">0851-7168-0606</a>
+
+                </div>
+
+              </li>
+
+              <li class="contact-list-item">
+
+                <div class="contact-item-icon">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Email:</h3>
+
+                  <a href="mailto:info@jack.com" target="_blank" class="contact-info">kmti.umyogyakarta@gmail.com</a>
+
+                </div>
+
+              </li>
+
+              <li>
+                <ul class="contac-social-list">
+
+                  <li>
+                    <a href="https://www.instagram.com/kmti_umy/" target="_blank" class="contact-social-link">
+                      <div class="tooltip">Instagram</div>
+
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://www.facebook.com/profile.php?id=100009568085884" target="_blank"
+                      class="contact-social-link">
+                      <div class="tooltip">Facebook</div>
+
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://twitter.com/kmti_umy?s=21&t=riPXwgAy-rEJd7CxMRLKdQ" target="_blank"
+                      class="contact-social-link">
+                      <div class="tooltip">Twitter</div>
+
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <form action="https://formcarry.com/s/LxVEbStyS" method="POST" accept-charset="UTF-8" class="contact-form">
+
+
+            <div class="form-wrapper">
+
+              <label for="name" class="form-label">Name</label>
+
+              <div class="input-wrapper">
+
+                <input type="text" name="name" id="name" required placeholder="Nama Kamu" class="input-field">
+
+                <ion-icon name="person-circle"></ion-icon>
+
+              </div>
+
+            </div>
+
+            <div class="form-wrapper">
+
+              <label for="email" class="form-label">Email</label>
+
+              <div class="input-wrapper">
+
+                <input type="email" name="email" id="email" required placeholder="Email kamu" class="input-field">
+
+                <ion-icon name="mail"></ion-icon>
+
+              </div>
+
+            </div>
+
+            <div class="form-wrapper">
+
+              <label for="phone" class="form-label">Phone</label>
+
+              <div class="input-wrapper">
+
+                <input type="tel" name="phone" id="phone" required placeholder="Nomor telpon kamu" class="input-field">
+
+                <ion-icon name="call"></ion-icon>
+
+              </div>
+
+            </div>
+
+            <div class="form-wrapper">
+
+              <label for="message" class="form-label">Message</label>
+
+              <div class="input-wrapper">
+
+                <textarea name="message" id="message" required placeholder="Tulis pesan kamu..."
+                  class="input-field"></textarea>
+
+                <ion-icon name="chatbubbles"></ion-icon>
+
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send</button>
+
+
+
+          </form>
+
+        </section> -->
+
+    </article>
+  </main>
+
+
+  <!-- Modal -->
+
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <br />
+      <br />
+      <div class="contener">
+        <iframe class="responsive-iframe" id="modal-context"></iframe>
+      </div>
+      <center>
+        <h1 class="h1 logo">
+          <a style="color: black; margin-top: 18px">IP<span>V6</span></a>
+        </h1>
+      </center>
+    </div>
+
+  </div>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          IP<span>V6</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        IPV6 <a href="#">Switching dan Wireless</a>
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+
+</html>
